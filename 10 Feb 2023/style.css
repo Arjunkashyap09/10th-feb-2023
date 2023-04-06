@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111827;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #111827;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.navbar ul li:first-child {
+  background-color: #6464e0;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+/* hamberger */
+img[alt="hambrger"]{
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+/* hero part css */
+.greet-img {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+/* this is hand img css */
+.greet-img div:first-child img {
+  width: 45px;
+  height: 45px;
+}
+/* text part */
+.greet-img div:first-child span {
+  font-size: 35px;
+  color: #fff;
+}
+.greet-img div:first-child h1 {
+  font-size: 60px;
+  color: #fff;
+}
+.greet-img div:first-child p {
+  font-size: 35px;
+  color: #c5c559;
+}
+/* pc image css */
+.greet-img div:last-child img {
+  width: 30vw;
+}
+
+/* Projects and images */
+.pojects-img {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.projectstext h1 {
+  font-size: 40px;
+  color: #fff;
+  border-bottom: 10px solid blue;
+}
+.pojects-img div img {
+  width: 384px;
+  height: 384px;
+}
+
+.project-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.project-grid div {
+  text-align: center;
+  color: #fff;
+}
+/* footer css */
+.footer {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer div img {
+  width: 30px;
+  height: 30px;
+}
+.footer h1 {
+  font-size: 40px;
+  color: #fff;
+  border-bottom: 10px solid blue;
+}
+.social-icon {
+  display: flex;
+  gap: 15px;
+}
+
+/*------------------ Responsive part ------------------ */
+@media screen and (max-width: 576px) {
+
+    img[alt="hambrger"]{
+        display: block;
+    }
+    .navbar {
+        display: flex;
+        justify-content: start;        
+    }
+    .navbar ul{
+        display: none;
+    }
+
+    .greet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .greet-img div:first-child span {
+        font-size: 25px;
+        color: #fff;
+      }
+      .greet-img div:first-child h1 {
+        font-size: 40px;
+        color: #fff;
+      }
+      .greet-img div:first-child p {
+        font-size: 25px;
+        color: #c5c559;
+      }
+
+      /* pc image */
+      .greet-img div:last-child img {
+        width: 60vw;
+      }
+
+
+  .greet-img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pojects-img {
+    padding: 0 0px;
+  }
+  .pojects-img div img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
